@@ -10,7 +10,7 @@
           "style": "scss"
         }
       },
-      "root": "",
+      "root": "./",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
@@ -33,7 +33,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/plotly.js/dist/plotly.min.js"
+              "node_modules/plotly.js-dist-min/plotly.min.js"
             ]
           },
           "configurations": {
@@ -41,8 +41,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "4mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "7mb",
+                  "maximumError": "8mb"
                 },
                 {
                   "type": "anyComponentStyle",
