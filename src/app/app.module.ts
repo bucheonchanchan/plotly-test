@@ -4,9 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import * as PlotlyJS from 'plotly.js-dist-min';
-import { PlotlyModule } from 'angular-plotly.js';
+import { PlotlyModule, PlotlyViaWindowModule } from 'angular-plotly.js';
 
-PlotlyModule.plotlyjs = PlotlyJS;
+window.Plotly = PlotlyJS;
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ PlotlyModule.plotlyjs = PlotlyJS;
   ],
   imports: [
     BrowserModule,
-    PlotlyModule
+    PlotlyViaWindowModule
   ],
   providers: [],
   bootstrap: [AppComponent]
